@@ -3,6 +3,12 @@
     src: url('public/fonts/Outfit-Regular.ttf') format('truetype');
     font-weight: normal;
 }
+:root {
+    --color-bg:       hsl(212, 45%, 89%);
+    --color-card:     hsl(0, 0%, 100%);
+    --color-title:    hsl(218, 44%, 22%);
+    --color-paragraph:hsl(216, 15%, 48%);
+}
 
 body {
     display: flex;
@@ -11,12 +17,12 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
-    background-color: hsl(212, 45%, 89%);
-    font-family: 'Outfit';
+    background-color: var(--color-bg);
+    font-family: 'Outfit', sans-serif;
 }
 .card {
     text-align: center;
-    background-color: hsl(0, 0%, 100%);
+    background-color: var(--color-card);
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -31,15 +37,15 @@ body {
     border-radius: 12px;
 }
 .text {
-    padding: 10px 0;
+    padding-block: 10px;
 }
 h1 {
-    color: hsl(218, 44%, 22%);
+    color: var(--color-title);
     font-size: 20px;
     font-weight: 700;
 }
 p {
     margin: 0;
     font-size: 15px;
-    color: hsl(216, 15%, 48%);
+    color: var(--color-paragraph);
 }
